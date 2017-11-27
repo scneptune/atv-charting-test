@@ -30,7 +30,10 @@ class HighchartDemo extends Component {
           type: 'line'
         },
         title: {
-          text: 'Test of a Line Graph With HighCharts'
+          text: 'Test of a Line Graph With HighCharts',
+          margin: 30,
+          verticalAlign: 'top',
+          y: 20
         },
         xAxis: {
           type: 'linear',
@@ -47,6 +50,12 @@ class HighchartDemo extends Component {
           }
         },
         series: [],
+        legend: {
+          verticalAlign: 'top',
+          lineHeight: 20,
+          margin: 30,
+          y: 30
+        },
         plotOptions: {
           series: {
             events: {
