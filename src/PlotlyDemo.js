@@ -22,6 +22,7 @@ export default class PlotlyDemo extends Component {
       legend: {
         orientation: "h"
       },
+      staticPlot: true,
       shapes: [],
       annotations: []
     };
