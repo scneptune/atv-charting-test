@@ -149,7 +149,12 @@ class HighchartDemo extends Component {
     }
   }
   render(){
-    return <div className="high-chart" style={{width: '100%', height: 500}} ref={this._setRef} />;
+    return (<div>
+      <div className="high-chart" style={{width: '100%', height: 500}} ref={this._setRef} />
+      <h3> DEMOS </h3>
+      <iframe width="100%" height="450" src="//jsfiddle.net/3n26xmtz/embedded/result/" frameBorder="0"></iframe>
+      <iframe width="100%" height="450" src="//jsfiddle.net/ojh0tsj5/embedded/result/" frameBorder="0"></iframe>
+    </div>);
   }
 }
 

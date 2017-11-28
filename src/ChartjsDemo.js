@@ -175,6 +175,12 @@ export default class ChartJsDemo extends Component {
   }
   _setChartRef = chartInstance => this.chartElem = chartInstance
   render(){
-    return (<canvas height="400" width="600" className="chart-js-demo" ref={this._setChartRef} />);
+    return (<div>
+      <canvas height="400" width="600" className="chart-js-demo" ref={this._setChartRef} />
+      <h3> DEMOS </h3>
+      <h4> Different line styles </h4>
+      <iframe height="400" style={{width: '100%'}} src="http://www.chartjs.org/samples/latest/charts/line/line-styles.html" >
+      </iframe>
+    </div>);
   }
 }

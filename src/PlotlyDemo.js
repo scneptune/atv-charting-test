@@ -22,6 +22,12 @@ export default class PlotlyDemo extends Component {
       legend: {
         orientation: "h"
       },
+      modeBarButtonsToRemove: ['sendDataToCloud', 'zoom2d', 'pan2d',
+        'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'hoverClosestCartesian',
+        'hoverCompareCartesian', 'zoom3d', 'tableRoation', 'orbitRotation', 'pan3d',
+        'toggleHover'
+      ],
+      modeBarButtons: false,
       staticPlot: true,
       shapes: [],
       annotations: []
@@ -127,6 +133,22 @@ export default class PlotlyDemo extends Component {
       height: 80 + 'vh',
       'marginTop': (100 - 80) / 2 + 'vh'
     }
-    return <div id="plotly-demo" style={styleResize} ref={this._setRef} />;
+    return (<div>
+      <div id="plotly-demo" style={styleResize} ref={this._setRef} />
+      <h2> OTHER DEMOS </h2>
+      <h4> annotated plots and axises </h4>
+      <iframe height='400' scrolling='no' title='Labelling Lines with Annotations with Plotly.js Charts' src='//codepen.io/plotly/embed/BNMROB/?height=400&theme-id=0&default-tab=result&embed-version=2' frameBorder='no' style={{width: '100%'}}>
+        See the Pen
+        <a href='https://codepen.io/plotly/pen/BNMROB/'>Labelling Lines with Annotations with Plotly.js Charts</a>
+          by plotly (<a href='https://codepen.io/plotly'>@plotly</a>) on <a     href='https://codepen.io'>CodePen
+        </a>.
+      </iframe>
+      <h4> animation </h4>
+      <iframe height='400' scrolling='no' title='animations-animating-the-data' src='//codepen.io/plotly/embed/ZpWPpj/?height=400&theme-id=0&default-tab=result&embed-version=2' frameBorder='no' style={{width: '100%'}}>
+        See the Pen <a href='https://codepen.io/plotly/pen/ZpWPpj/'>animations-animating-the-data</a> by plotly
+        (<a href='https://codepen.io/plotly'>@plotly</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>
+      <h4></h4>
+    </div>);
   }
 }
